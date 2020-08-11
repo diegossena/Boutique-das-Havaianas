@@ -1,0 +1,27 @@
+.filter-bar {
+  max-width: 170px;
+  padding: 12px;
+  min-width: 119px;
+  width: 100%;
+}
+.filter-group {
+  border-bottom: 1px #e5e5e5 solid;
+  padding-bottom: 10px;
+}
+.filter-title {
+  padding: 16px 0;
+  color: #666;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.1;
+}
+.filter-list-item {
+  user-select: none;
+  padding-bottom: 6px;
+}
+.filter-list-item [type=checkbox] {
+  transform: scale(1.4);
+}
+.filter-list-item label {
+  padding-left: 5px;
+}

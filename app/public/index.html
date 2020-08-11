@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta charset="UTF-8">
+    <title>Boutique das Havaianas</title>
+    <link href="img/favicon.png" rel="icon">
+    <link href="css/globals.css" rel="stylesheet">
+    <link href="css/modal.css" rel="stylesheet">
+    <link href="css/fixed-header.css" rel="stylesheet">
+    <link href="css/filters.css" rel="stylesheet">
+    <link href="css/products-grid.css" rel="stylesheet">
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <header class="fixed-header">
+      <div class="logo">Boutique das Havaianas</div>
+      <input id="search" class="search-box" type="text" placeholder="Busca">
+      <button id="inventory-controller">
+        <svg width="1em" height="1em">
+          <path fill-rule="evenodd" d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z"/><path fill-rule="evenodd" d="M7.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0V8z"/>
+        </svg>
+        <span>Menu</span>
+      </button>
+    </header>
+    <div class="products">
+      <aside id="filter-bar" class="filter-bar"></aside>
+      <div class="shop-area">
+        <div>
+          <h1>Em Compra</h1>
+          <form id="formVenda">
+            <ul class="grid" id="shop-grid"></ul>
+          </form>
+        </div>
+        <hr>
+        <div>
+          <h1>Produtos</h1>
+          <ul class="grid" id="products-grid"></ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

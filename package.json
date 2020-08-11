@@ -1,0 +1,32 @@
+{
+  "name": "boutique_das_havaianas",
+  "version": "1.0.0",
+  "main": "app/main.js",
+  "description": "Sistema de vendas e gerenciamento de estoque",
+  "scripts": {
+    "start": "electron .",
+    "knex": "knex --knexfile app/database/knexfile.js migrate:latest & knex --knexfile app/database/knexfile.js seed:run",
+    "dist": "electron-builder & \"C:\\Users\\Diego Sena\\Documents\\Projetos\\NodeJS\\Boutique das Havaianas\\dist\\win-unpacked\\boutique_das_havaianas.exe\""
+  },
+  "keywords": [],
+  "author": "Diêgo S. Sena",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^9.1.1",
+    "electron-builder": "^22.7.0"
+  },
+  "build": {
+    "extraResources": [
+      "./database.sqlite",
+      "./uploads"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "app/public/img/favicon.png"
+    }
+  },
+  "dependencies": {
+    "knex": "^0.21.2",
+    "sqlite3": "^5.0.0"
+  }
+}
