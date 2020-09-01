@@ -4,7 +4,7 @@
   "main": "app/main.js",
   "description": "Sistema de vendas e gerenciamento de estoque",
   "scripts": {
-    "start": "electron .",
+    "start": "cls & electron .",
     "knex": "knex --knexfile app/database/knexfile.js migrate:latest & knex --knexfile app/database/knexfile.js seed:run",
     "dist": "electron-builder & \"C:\\Users\\Diego Sena\\Documents\\Projetos\\NodeJS\\Boutique das Havaianas\\dist\\win-unpacked\\boutique_das_havaianas.exe\""
   },

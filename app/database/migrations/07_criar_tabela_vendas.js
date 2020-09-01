@@ -3,7 +3,6 @@ const knex = require('knex')
 exports.up = function(knex) {
   return knex.schema.createTable('vendas', table => {
     table.increments()
-    table.datetime('dateTime').defaultTo(knex.fn.now())
     table.integer('tipoPagamento_id')
       .notNullable()
       .references('id')
@@ -12,6 +11,11 @@ exports.up = function(knex) {
       .notNullable()
       .references('id')
       .inTable('metodosPagamento')
+    table.integer('vendedor_id')
+      .notNullable()
+      .references('id')
+      .inTable('vendedores')
+    table.datetime('dataVenda').notNullable()
   })
 };
 

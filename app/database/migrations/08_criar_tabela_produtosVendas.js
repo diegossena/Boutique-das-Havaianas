@@ -6,11 +6,12 @@ exports.up = function(knex) {
       .notNullable()
       .references('id')
       .inTable('vendas')
-    table.integer('qtd').notNullable()
     table.integer('havaiana_id')
       .notNullable()
       .references('id')
       .inTable('havaianas')
+    table.integer('quantidadeVenda').notNullable()
+    table.decimal('desconto',2).notNullable()
   })
 };
 

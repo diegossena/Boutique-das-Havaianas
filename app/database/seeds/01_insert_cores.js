@@ -11,13 +11,15 @@ exports.seed = function(knex) {
         {id:4, cor: 'Bege'},
         {id:5, cor: 'Branco'},
         {id:6, cor: 'Cinza'},
-        {id:7, cor: 'Marinho'},
-        {id:8, cor: 'Marrom'},
-        {id:9, cor: 'Preto'},
-        {id:10, cor: 'Rosa'},
-        {id:11, cor: 'Roxo'},
-        {id:12, cor: 'Verde'},
-        {id:13, cor: 'Vermelho'}
+        {id:7, cor: 'Dourado'},
+        {id:8, cor: 'Laranja'},
+        {id:9, cor: 'Marinho'},
+        {id:10, cor: 'Marrom'},
+        {id:11, cor: 'Preto'},
+        {id:12, cor: 'Rosa'},
+        {id:13, cor: 'Roxo'},
+        {id:14, cor: 'Verde'},
+        {id:15, cor: 'Vermelho'}
       ]);
     });
 };

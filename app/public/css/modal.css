@@ -16,8 +16,8 @@
   z-index: 2;
 }
 .modal {
-  margin: 1.75rem auto;
-  max-width: 500px;
+  margin: 2.5rem auto;
+  min-width: 572px;
   background-color: #fff;
   border-radius: .3rem;
   width: 100%;
@@ -29,10 +29,12 @@
   border-bottom: 1px solid #dee2e6;
 }
 .modal-title {
+  user-select: none;
   font-size: 1.25rem;
   line-height: 1.5;
 }
 .modal-close {
+  user-select: none;
   padding: 1rem 1rem;
   margin: -1rem -1rem -1rem auto;
   cursor: pointer;
@@ -84,6 +86,7 @@
   border-color: #1e7e34;
 }
 .modal-switch {
+  user-select: none;
   align-content: space-between;
 }
 .switch-group {
@@ -91,6 +94,9 @@
 }
 .switch-group:first-child {
   border-bottom: 1px solid #dee2e6;
+}
+.switch-group:last-child {
+  border-top: 1px solid #dee2e6;
 }
 .switch-choice {
   background-color: transparent;
@@ -111,6 +117,7 @@
   border-right: 1px solid #dee2e6;
 }
 .campoCadastro {
+  display: flex;
   padding: 5px 0;
 }
 .campoCadastro label {
@@ -126,4 +133,38 @@
 }
 .campoCadastro input, .campoCadastro select {
   padding: 2px;
+}
+.alert {
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  width: 22%;
+  min-height: 64px;
+  z-index: 3;
+  background: #262424;
+  border-radius: .1em;
+  cursor: pointer;
+  color: #fff;
+  transition: ease .1s;
+}
+.alert-body {
+  margin: auto 0;
+  padding: 8px;
+}
+.alert-progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: hsl(182, 100%, 38%);
+  height: 5px;
+}
+.filtrosRelatorio {
+  user-select: none;
+  text-align: center;
+}
+.filtrosRelatorio * {
+  height: 24px;
+}
+.descontoVenda {
+  width: 73px;
 }

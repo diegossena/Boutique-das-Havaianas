@@ -1,5 +1,6 @@
 .products {
   display: flex;
+  user-select: none;
 }
 .products h1 {
   margin-top: 10px;
@@ -45,12 +46,10 @@
   border-color: #3baeac;
 }
 .item-showcase {
-  height: auto;
-  max-height: 115px;
-  max-width: 100%;
-  width: 220px;
-  height: 220px;
+  display: block;
+  height: 115px;
   border-radius: .5rem;
+  margin: auto;
 }
 .item-name {
   display: block;
@@ -68,9 +67,12 @@
   font-weight: inherit;
 }
 .item-qtd {
-  display: block;
+  display: flex;
   font-size: 12px;
   color: #5a5a5a
+}
+.item-qtd div:first-child {
+  margin-right: 1px;
 }
 
 .efetuarVenda {

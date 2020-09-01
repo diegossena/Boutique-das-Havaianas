@@ -21,11 +21,3 @@
 * `git branch`: gerenciar novas linhas do tempo
 * `git checkout`: manipula as linhas do tempo
 * `git merge`: unir linhas do tempo
-{
-  Visualização relatório de vendas
-  Filtro por {
-    Tipo de venda,
-    Modelo,
-    Mês
-  }
-}

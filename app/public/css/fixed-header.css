@@ -9,6 +9,7 @@ body {
   width: 100%;
   background: #e73023;
   z-index: 1;
+  user-select: none;
 }
 .logo {
   color: #fff;
